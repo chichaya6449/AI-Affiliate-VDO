@@ -375,4 +375,3 @@ The finished Gem instructions will be tested with at least these cases:
 29. Objects-only flood-preparedness wording may mention keeping the product at home to hold belongings during flooding, while boat, flotation, rescue, and human-transport claims remain prohibited.
 
 The final response passes only when it contains exactly four correctly labeled code blocks, the embedded dialogue uses AI-safe Thai and fits the defined timing or proxy budget, and the Shopee block is verified at no more than 150 characters under the conservative counting rule.
-

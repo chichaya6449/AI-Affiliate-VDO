@@ -246,4 +246,3 @@ Count the normalized payload as 13 Unicode code points and 14 UTF-16 code units,
 
 Literal payload: `สินค้า🧽 #บ้าน`
 Expected conservative count: 14
-

@@ -269,4 +269,3 @@ git commit -m "docs: add Gem setup and usage guide"
 - [ ] **Step 7: Final review**
 
 Compare the instruction artifact against every section of the design spec, confirm the working tree is clean, and report the instruction file, guide, tests run, and commit IDs to the user.
-

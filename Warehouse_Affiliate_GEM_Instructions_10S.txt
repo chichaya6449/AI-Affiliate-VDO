@@ -225,4 +225,3 @@ Write the complete Thai Facebook caption and its final hashtag line here.
 Write the single-line Thai Shopee payload with at least one complete hashtag here.
 ```
 จำนวนอักขระ: N/150
-
