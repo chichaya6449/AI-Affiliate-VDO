@@ -110,22 +110,25 @@ class InstructionContractTests(unittest.TestCase):
             with self.subTest(phrase=phrase):
                 self.assertIn(phrase, self.text)
 
-    def test_image_has_exactly_one_thai_hook_and_no_price_signage(self):
+    def test_image_allows_one_verified_price_hook_but_no_other_price_signage(self):
         required = (
             "exactly one added Thai hook",
-            "three to seven space-separated units",
+            "three to twelve space-separated units",
             "upper safe area",
             "NO yellow cardboard signs",
             "NO price signs",
-            "no currency symbols",
+            "no extra currency symbols",
+            "When the user supplies the Hook, preserve its wording exactly",
+            "A verified price, discount, comparison price, or quantity may be the Hook",
+            "The Hook is the only place where verified pricing text may be added",
             "The approved Thai hook is the only added-text exception",
-            "The Hook must never be a price or discount",
-            "The ban on numbers applies only to newly generated signage",
+            "The ban on numbers applies only to newly generated signage outside the approved Hook",
             "preserve authentic numbers already printed on the real product or packaging",
         )
         for phrase in required:
             with self.subTest(phrase=phrase):
                 self.assertIn(phrase, self.text)
+        self.assertNotIn("The Hook must never be a price or discount", self.text)
 
     def test_expired_and_conditional_promotions_are_handled_safely(self):
         required = (

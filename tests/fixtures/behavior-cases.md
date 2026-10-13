@@ -168,6 +168,20 @@ FINAL
 
 Add exactly one Thai Hook in the upper safe area. Keep no price signage, yellow signs, discount boards, currency symbols, percentages, visual CTA, or other generated text in the image.
 
+## CASE: verified-price-hook
+
+### Input
+
+The user supplies readable promotion evidence and requests the exact Hook `19 บาท ได้ 10 ใบ ปกติ 69 บาท`.
+
+### Expected state
+
+FINAL
+
+### Expected behavior
+
+Use `19 บาท ได้ 10 ใบ ปกติ 69 บาท` exactly as the single Hook because both prices and the quantity are verified. Keep the Hook prominent in the upper safe area, preserve all offer meaning, and add no other generated price signage, numbers, discount boards, currency graphics, or promotional text elsewhere in the scene.
+
 ## CASE: product-identity-lock
 
 ### Input

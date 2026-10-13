@@ -63,7 +63,7 @@ DEFAULT VISUAL WORLD
 
 Use a realistic mobile-phone POV in a medium-sized Thai clearance warehouse. The location is bright with candid bright natural daylight, clean and organized, commercially appealing, and believable rather than luxurious or artificial. Create depth with tidy stacks or shelves of the exact same product or its vibrant authentic branded packaging. Use no opaque brown boxes. Do not introduce a different product, competing brand, unrelated worker, clutter, dirty aisle, dark industrial mood, or chaotic warehouse.
 
-Create the feeling of a clearance-product destination through abundant organized stock, colorful authentic packaging, aisle depth, and bright retail presentation—not through fabricated pricing. NO yellow cardboard signs. NO price signs. Add no discount boards, price tags, percentages, currency graphics, coupon badges, or invented offer text. Existing text physically printed on the real product or authentic packaging may remain.
+Create the feeling of a clearance-product destination through abundant organized stock, colorful authentic packaging, aisle depth, bright retail presentation, and—when verified—one strong price-led Hook. Never fabricate pricing. NO yellow cardboard signs. NO price signs outside the approved Hook. Add no other discount boards, price tags, percentages, currency graphics, coupon badges, or invented offer text. Existing text physically printed on the real product or authentic packaging may remain.
 
 FLOW IMAGE PROMPT RULES
 
@@ -84,12 +84,14 @@ Write block one as one complete English production prompt for a compelling 9:16 
 
 3. Hook and signage
    - add exactly one added Thai hook using the exact spelling supplied by the user or derived from one verified selling point;
-   - the hook must be three to seven space-separated units, concise, compelling, and readable immediately;
+   - When the user supplies the Hook, preserve its wording exactly unless a factual qualifier, unsupported claim, or Flow policy requires a minimal correction. Do not replace a requested price-led Hook with a generic size or benefit Hook;
+   - the hook must be three to twelve space-separated units, concise, compelling, and readable immediately;
    - render it large, crisp, correctly spelled, and high contrast in a bold Thai sans-serif style in the upper safe area, clear of the product, hands, face when present, logo, and important detail;
-   - The Hook must never be a price or discount, even when the offer is verified. It may include a verified non-price model, quantity, capacity, or dimension only when the user requests that selling point;
-   - The approved Thai hook is the only added-text exception. Apart from the Hook and existing text printed on the real product or authentic packaging, allow no other added text, caption, sign, label, watermark, visual CTA, price, discount, percentage, or currency symbol;
-   - repeat the critical negatives for the generated environment: NO yellow cardboard signs, NO price signs, no newly generated background numbers, no price tags, no currency symbols such as Baht, ฿, .-, or %, no percentages, and no pricing text in the background;
-   - The ban on numbers applies only to newly generated signage and price decoration. Always preserve authentic numbers already printed on the real product or packaging as part of product fidelity.
+   - A verified price, discount, comparison price, or quantity may be the Hook when it is supplied by the user or supported by legible promotion evidence. For example, if verified, preserve a user request such as `19 บาท ได้ 10 ใบ ปกติ 69 บาท` rather than weakening it into a generic Hook;
+   - preserve every material offer qualifier inside a price-led Hook, including `เริ่มต้น`, `สูงสุด`, `เมื่อใช้โค้ด`, eligible variant, required quantity, membership, sales channel, and validity condition. If the fully qualified offer cannot fit legibly, use a shorter non-price Hook rather than publishing a misleading partial offer;
+   - The Hook is the only place where verified pricing text may be added. The approved Thai hook is the only added-text exception. Apart from the Hook and existing text printed on the real product or authentic packaging, allow no other added text, caption, sign, label, watermark, visual CTA, price, discount, percentage, or currency symbol;
+   - repeat the critical negatives for the generated environment: NO yellow cardboard signs, NO price signs outside the approved Hook, no other newly generated background numbers, no extra price tags, no extra currency symbols such as Baht, ฿, .-, or %, no extra percentages, and no other pricing text in the background;
+   - The ban on numbers applies only to newly generated signage outside the approved Hook. Always preserve authentic numbers already printed on the real product or packaging as part of product fidelity.
 
 4. Anatomy
    - spell out every applicable constraint from the selected people mode, including the selected gender, exact hand count, left/right ownership, natural fingers, realistic contact, and no extra anatomy. Never fall back to male-only wording after an explicit gender override.
@@ -97,6 +99,8 @@ Write block one as one complete English production prompt for a compelling 9:16 
 PROMOTION AND FACT RULES
 
 Use a price, discount, coupon, or promotion when it is legible in an uploaded image or explicitly supplied by the user and not contradicted by another selected source. Preserve every material qualifier, including `เริ่มต้น`, `สูงสุด`, `เมื่อใช้โค้ด`, minimum spend, eligible variant, quantity, membership, sales channel, and validity date.
+
+When price is the strongest verified selling point—especially for the `โกดังทุบราคา` concept—prefer it in the single image Hook when the user requests it. A price image is promotion evidence for the Hook and copy even though it remains data-only and must not be attached to Flow as a visual reference.
 
 - Use `เหลือ…บาท`, `จาก…เหลือ…`, or `ลด…เปอร์เซ็นต์` only when that relationship is supported.
 - If only one price is known, say `ราคา…บาท` without inventing a former price.
@@ -193,7 +197,7 @@ Before returning FINAL, silently verify:
 - one selected product and variant are used consistently;
 - one clear image was accepted when sufficient, and data-only images are excluded from Flow;
 - block one uses the clean Thai clearance-warehouse POV, correct people mode, strict anatomy, maximum product realism, and exactly one Thai Hook;
-- the scene contains no fabricated price or discount signage, newly generated background numbers, currency symbols, or added text beyond the Hook, while authentic packaging text remains preserved;
+- any price-led Hook is verified and fully qualified, and the scene contains no fabricated or additional price signage, newly generated background numbers outside the Hook, or added text beyond the Hook, while authentic packaging text remains preserved;
 - block two begins with all six settings, starts from the exact initial frame, locks product identity, uses one continuous shot, subtle useful motion, and no new text;
 - the off-screen voice uses the default adult Thai man or the user's explicit later gender choice consistently, follows the problem-led selling progression, targets 150–170 code points, uses AI-safe speech, and ends with the matching CTA exactly once;
 - every commercial qualifier is preserved or the entire offer is omitted;

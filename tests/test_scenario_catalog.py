@@ -20,6 +20,7 @@ REQUIRED_CASES = {
     "male-hands-default",
     "adult-male-explicit",
     "hook-only-added-text",
+    "verified-price-hook",
     "product-identity-lock",
     "male-voice-150-170",
     "shopee-150",
@@ -95,6 +96,7 @@ class ScenarioCatalogTests(unittest.TestCase):
             "male-hands-default": "FINAL",
             "adult-male-explicit": "FINAL",
             "hook-only-added-text": "FINAL",
+            "verified-price-hook": "FINAL",
             "product-identity-lock": "FINAL",
             "male-voice-150-170": "FINAL",
         }
@@ -110,6 +112,11 @@ class ScenarioCatalogTests(unittest.TestCase):
             "male-hands-default": ("one left hand and one right hand", "same adult man"),
             "adult-male-explicit": ("only because the user explicitly requested",),
             "hook-only-added-text": ("exactly one Thai Hook", "no price signage"),
+            "verified-price-hook": (
+                "19 บาท ได้ 10 ใบ ปกติ 69 บาท",
+                "exactly as the single Hook",
+                "no other generated price signage",
+            ),
             "product-identity-lock": ("same product throughout", "no spin or rotation"),
             "male-voice-150-170": ("150–170", "กดตะกร้าด้านล่างได้เลยครับ"),
             "explicit-gender-override": ("hands, visible demonstrator, voice, and CTA", "matching polite particle"),
